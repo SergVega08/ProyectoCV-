@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>Curriculum Vitae</title>
+</head>
+
+ <body>
+    <main id="contenedor1">
+        <section id="seccionizquierda">
+         <div id="contenidoizquierdo">
+            <div class="perfil">
+                <img src="https://cdn-images.livecareer.es/pages/foto_cv_lc_es_4.jpg" alt="">
+                <h2 id="nombre">Peter Laurent</h2>
+                <p id="profesion">Desarrollador de Software</p>
+            </div>
+            <div id="informaciondecontacto">
+                <h3 id="Contacto">Información de contacto</h3>
+                 <ul>
+                      <li>
+                        <i class="fa fa-phone"><b>Teléfono</b>:1142398750</i>
+                      </li>
+                      <li>
+                        <i class="fa fa-envelope"><b>Email</b>:PLaurent@gmail.com</i>
+                      </li>
+                      <li>
+                        <i class="fa fa-globe"> <b>Web</b>:DesarrolloIngenia.com</i>
+                     </li>
+                     <li>
+                        <i class="fa fa-home"></i><b>Dirección</b>:<a href="https://www.google.com/maps/@-34.5951957,-58.3800672,3a,75y,320.21h,90t/data=!3m7!1e1!3m5!1sR3T4KBioyO8BMt9ZJAHoHQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DR3T4KBioyO8BMt9ZJAHoHQ%26cb_client%3Dsearch.revgeo_and_fetch.gps%26w%3D96%26h%3D64%26yaw%3D320.20834%26pitch%3D0%26thumbfov%3D100!7i16384!8i8192"> Av. Santa Fe 904,CABA</a>
+                     </li>
+                 </ul>
+            </div>
+            
+            <div id="Habilidades">
+                <h3 id="progreso">HABILIDADES</h3>
+                <ul> 
+                    <li>
+                    <label for="html"><b>Html5:</b></label>
+                    <progress id="html" max="100" value="90"> 90% </progress>
+                    </li>
+                    <li>
+                    <label for="javasc"><b>JavaS:</b></label>
+                    <progress id="javasc" max="100" value="70"> 70% </progress>
+                    </li>
+                    <li>
+                        <label for="CSS"><b>CSS:</b></label>
+                        <progress id="CSS" max="100" value="95"> 95% </progress>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="seccionreferencias">
+        <h3 id="referencias">REFERENCIAS</h3> 
+        <h4 class="sub_titulo">Stefania Piamonte</h4> 
+        <p id="sub_para">Ingeniero en Sistema</p>  
+        <ul>
+            <li>
+               <i class="fa fa-phone"><b>Teléfono</b>:1154672311</i>
+            </li>
+            <li>
+               <i class="fa fa-envelope"><b>Email</b>:Stefpiam@gmail.com</i>
+            </li>
+        </ul>    
+        <h4 class="sub_titulo">Adrien Swachz</h4> 
+        <p id="sub_para">Desarrolador Backend</p>  
+        <ul>
+            <li>
+               <i class="fa fa-phone"><b>Teléfono</b>:3415467231</i>
+            </li>
+            <li>
+               <i class="fa fa-envelope"><b>Email</b>AdrSchz@gmail.com</i>
+            </li>
+            <h4 class="sub_titulo">Matheus Liberman</h4> 
+        <p id="sub_para">Data Science</p>  
+        <ul>
+            <li>
+               <i class="fa fa-phone"><b>Teléfono</b>:11458912451</i>
+            </li>
+            <li>
+               <i class="fa fa-envelope"><b>Email</b>:mLiberman_34m@gmail.com</i>
+            </li>
+        </ul>       
+        </div>
+
+        <button class="open-button" onclick="openForm()">Contácteme</button>
+        
+        <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container" method="post">
+               <h2>Contacto</h2>
+               <label for="emp"><b>Empresa</b></label>
+               <input type="text" placeholder="empresa" name="emp" required>
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+              <label for="msj"><b>Mensaje</b></label>
+             <input type="text" placeholder="mensaje" name="msj" required>
+             <button type="button" class="btn-linkedin"><a href="https://www.linkedin.com/" style="color:blue"><i class="fa fa-linkedin"></i></a></button>
+             <button type="button" class="btn-face"><a href="https://www.facebook.com/"><i class="fa fa-facebook-f" style="color: rgb(5, 5, 133);"></i></a></button>
+             <button type="button" class="btn-twitter"><a href="https://www.twitter.com/" style="color:lightblue"><i class="fa fa-twitter-square"></i></a></button>
+             <button type="button" class="btn-instagram"><a href="https://www.instagram.com/" style="color:rgb(255, 115, 0)"><i class="fa fa-instagram"></i></a></button>
+             <button type="button" class="btn-youtube"><a href="https://www.youtube.com/" style="color:red"><i class="fa fa-youtube-play"></i></a></button>
+             <button type="button" class="btn-google""><a href="https://www.gmail.com/"><i class="fa fa-google" style="color: rgba(226, 7, 7, 0.808);"></i></a></button>    
+             <button type="submit" class="btn">Enviar</button>
+             <button type="button" class="btn cancel" onclick="closeForm()">Cerrar</button>
+
+ 
+            </form>
+        </div>
+
+         <script>
+            function openForm() {
+             document.getElementById("myForm").style.display = "block";
+            }
+  
+            function closeForm() {
+             document.getElementById("myForm").style.display = "none";
+            }
+
+         </script> 
+        </section>
+        
+        
+        <section id="seccionderecha">
+          <div class="contenedorderecho">
+            <h2 class="tituloderecho">Acerca de Mi</h2>
+            <p class="parrafoderecho">
+            Desarrollador de software con experiencia en diseño, instalación, pruebas y mantenimiento de  
+            sistemas de software. Dominio de varias plataformas, lenguajes y sistemas integrados. Experiencia en las herramientas y procedimientos de desarrollo más vanguardistas. Capaz de autogestión eficaz en proyectos independientes. Buenas habilidades de colaboración dentro de un equipo productivo<br>
+            <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint et odit iure nemo dolorem sit, perferendis soluta cum vitae magni fugiat tempore ratione, voluptatibus rem possimus quae similique ad molestiae.
+            </p>
+        
+        <section class="experiencia">
+            h2 class="tituloderecho"><u>Experiencia</u></h2>
+               <div class="años">
+                   <div class="tlizquierdocontenedor">
+                    <h5 class="tituloizquierdo">Microsoft</h5>
+                    <p class="para"><strong>2016-2018</strong></p>
+                   </div>
+                    <div class="tlderechocontenedor">
+                    <div class="contenidotl">
+                        <h5 class="tituloderecho">Junior Developer</h5>
+                        <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate ex, perferendis expedita unde officiis quibusdam voluptatem blanditiis, harum, earum ab doloremque. Possimus aliquid minus pariatur magni, cupiditate soluta iure delectus.</p>
+                    </div>
+                   </div>
+               </div>
+               
+        </section> 
+
+        <section class="experiencia">
+                <div class="años">
+                    <div class="tlizquierdocontenedor">
+                      <h5 class="tituloizquierdo">Netflix</h5>
+                      <p class="para"><strong>2019-2021</strong></p>
+                   </div>
+                    <div class="tlderechocontenedor">
+                     <div class="contenidotl">
+                        <h5 class="tituloderecho">Data Science</h5>
+                        <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate ex, perferendis expedita unde officiis quibusdam voluptatem blanditiis, harum, earum ab doloremque. Possimus aliquid minus pariatur magni, cupiditate soluta iure delectus.</p>
+                     </div>
+                    </div>
+               </div>
+               
+        </section> 
+                <section class="experiencia">
+                    <div class="años">
+                    <div class="tlizquierdocontenedor">
+                     <h5 class="tituloizquierdo">Mercado Libre</h5>
+                     <p class="para"><strong>2021-Actualidad</strong></p>
+                    </div>
+                    <div class="tlderechocontenedor">
+                     <div class="contenidotl">
+                         <h5 class="tituloderecho">Analista de Datos</h5>
+                         <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate ex, perferendis expedita unde officiis quibusdam voluptatem blanditiis, harum, earum ab doloremque. Possimus aliquid minus pariatur magni, cupiditate soluta iure delectus.</p>
+                     </div>
+                    </div>
+                </div>
+         </section> 
+
+        <section class="educacion">
+                    <h2 class="tituloderecho"><u>Educación</u></h2>
+                    <div class="formacion">
+                        <div class="tlizquierdocontenedor">
+                         <h5 class="tituloizquierdo">Escuela San José</h5>
+                         <p class="para"><strong>2010-2014</strong></p>
+                        </div>
+                        <div class="tlderechocontenedor">
+                         <div class="contenidotl">
+                             <h5 class="tituloderecho">Técnico en Informática</h5>
+                             <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate ex, perferendis expedita unde officiis quibusdam voluptatem blanditiis, harum, earum ab doloremque. Possimus aliquid minus pariatur magni, cupiditate soluta iure delectus.</p>
+                         </div>
+                        </div>
+                    </div>
+         </section> 
+
+            <div class="formacion">
+                <div class="tlizquierdocontenedor">
+                 <h5 class="tituloizquierdo">Instituto Politécnico Superior</h5>
+                 <p class="para"><strong>2015-2019</strong></p>
+                </div>
+                <div class="tlderechocontenedor">
+                 <div class="contenidotl">
+                     <h5 class="tituloderecho">Técnico Universitario en Sistemas</h5>
+                     <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate ex, perferendis expedita unde officiis quibusdam voluptatem blanditiis, harum, earum ab doloremque. Possimus aliquid minus pariatur magni, cupiditate soluta iure delectus.</p>
+                 </div>
+                </div>
+            </div>
+
+            <div class="formacion">
+                <div class="tlizquierdocontenedor">
+                 <h5 class="tituloizquierdo">Universidad Tecnólogica Nacional</h5>
+                 <p class="para"><strong>2020-Actualidad</strong></p>
+                </div>
+                <div class="tlderechocontenedor">
+                 <div class="contenidotl">
+                     <h5 class="tituloderecho">Ingeniería en Sistemas</h5>
+                     <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate ex, perferendis expedita unde officiis quibusdam voluptatem blanditiis, harum, earum ab doloremque. Possimus aliquid minus pariatur magni, cupiditate soluta iure delectus.</p>
+                 </div>
+                </div>
+            </div>
+            
+       </section> 
+    </section> 
+            </div>  
+        </section>  
+    </main>
+ </body>
+</html>
